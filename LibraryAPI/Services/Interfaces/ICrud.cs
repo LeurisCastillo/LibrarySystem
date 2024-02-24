@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace WebApiDemo.Services.Interfaces
+namespace LibraryAPI.Services.Interfaces
 {
     public interface ICrud<T> where T : class, new()
     {

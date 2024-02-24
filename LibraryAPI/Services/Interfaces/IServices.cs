@@ -1,6 +1,6 @@
 ﻿using LibraryAPI.Models.Entities;
 
-namespace WebApiDemo.Services.Interfaces
+namespace LibraryAPI.Services.Interfaces
 {
     public interface IAutorService : ICrud<Autor>
     {

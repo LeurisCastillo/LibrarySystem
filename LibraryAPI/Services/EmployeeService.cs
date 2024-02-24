@@ -1,12 +1,12 @@
 ﻿
 using LibraryAPI.Models.Context;
 using LibraryAPI.Models.Entities;
+using LibraryAPI.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
-using WebApiDemo.Services.Interfaces;
 
-namespace WebApiDemo.Services
+namespace LibraryAPI.Services
 {
     public class EmployeeService : IEmployeeService
     {
@@ -63,7 +63,7 @@ namespace WebApiDemo.Services
         {
             try
             {
-               return await db.Set<Employee>().ToListAsync();
+                return await db.Set<Employee>().ToListAsync();
             }
             catch (Exception)
             {
